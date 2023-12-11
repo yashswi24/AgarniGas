@@ -1,0 +1,360 @@
+/* body {
+	font-family: Arial, sans-serif;
+	background-color: #f5f5f5;
+	text-align: center;
+} */
+@media (max-width: 767px) {
+	.step-title {
+		font-size: 20px;
+	}
+
+	.step-description {
+		font-size: 14px;
+	}
+
+	.step-number {
+		font-size: 24px;
+	}
+	.news-card {
+		margin-bottom: 20px;
+	  }
+}
+@keyframes slide-in {
+	0% {
+		opacity: 0;
+		transform: translateY(-20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-5px);
+    }
+    60% {
+      transform: translateY(-3px);
+    }
+  }
+
+@keyframes moveUpDown {
+	0%, 100% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(-6px); /* Adjust the value as needed */
+	}
+}
+body {
+    background-color: #f2f2f2;
+}
+.news-card {
+	background-color: white;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	padding: 15px;
+	margin: 10px;
+	display: flex;
+	flex-direction: column;
+  }
+
+  .news-card-title {
+	font-size: 1.2rem;
+	margin-top: 10px;
+  }
+
+  .news-card-text {
+	font-size: 0.9rem;
+	color: #666;
+  }
+  
+
+.news-card-button {
+	background-color: #007BFF;
+	color: #fff;
+	text-decoration: none;
+	padding: 8px 12px;
+	border-radius: 5px;
+	display: inline-block;
+	align-self: flex-end;
+	margin-top: 10px;
+  }
+
+  .news-card-button:hover {
+	background-color: #0056b3;
+  }
+  
+
+  .bg-darkgreen {
+	background: #1C5620;
+  }
+  .bg-orange {
+	background: #FF9933;
+  }
+
+.text-orange {
+    color: #FF9933;
+}
+
+.text-darkgreen {
+    color: #1C5620;
+}
+
+.btn-outline-bg-darkgreen {
+    border: 1px solid #1C5620;
+}
+
+.border-bottom-darkgreen {
+    border-bottom: 1px solid #1C5620;
+}
+
+.border-orange {
+    border: 1px solid #FF9933;
+}
+
+.border-darkgreen {
+    border: 3px solid #1C5620;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.vrr {
+    border-right: 1px solid #FF9933;
+}
+
+.logo {
+    max-width: 100%;
+    height: 50px;
+    display: block;
+    margin: auto;
+}
+
+.img-fluid {
+    width: 100%;
+    height: auto;
+    opacity: 0.7;
+}
+
+.img-fluid1 {
+    margin-top: 12px;
+    margin: auto;
+}
+
+.location {
+    cursor: pointer;
+}
+
+#video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.process-container {
+    margin: 30px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* padding: 10px; */
+    width: 100%;
+    justify-content: center;
+    animation: slide-in 1s ease-in-out;
+    display: flex;
+    /* margin-top: 20px; */
+    margin-bottom: 0;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.process-step {
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.step-number {
+    font-size: 32px;
+    color: #ff9933;
+}
+
+.step-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.step-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.process-head {
+    justify-content: center;
+}
+
+.next-button {
+    background-color: #1C5620;
+    color: #FF9933;
+    border: none;
+    margin: 10px;
+    padding: 6px 11px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.next-button:hover {
+    background-color: #FF9933;
+    color: #1C5620;
+}
+
+.video-container {
+    height: 30px;
+}
+
+.card {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+.container-fluid {
+    padding-bottom: 100px;
+}
+
+.logo {
+    height: 60px;
+}
+
+#news-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-top: 20px;
+  }
+  
+
+  .news-card {
+	transition: transform 0.3s ease-in-out;
+  }
+.news-card:hover {
+	transform: scale(1.05);
+  }
+  .card-img-top {
+	max-height: 200px;
+	object-fit: cover;
+  }
+  
+
+/* Additional styles */
+
+.slate-bg {
+    background-color: #f7f7f7;
+}
+
+.card3 {
+    padding: 2;
+}
+
+.stylish-text {
+    font-family: 'Your Font Here', sans-serif;
+    font-weight: bold;
+}
+
+.brand-name {
+    display: flex;
+}
+
+.sticky-note {
+    background-color: #FF9933;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    list-style-type: none;
+}
+
+.sticky-note:hover {
+    background-color: #1C5620;
+}
+
+.content {
+    display: none;
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sticky-container {
+    flex-basis: 100%;
+}
+
+/* Add this CSS to your style.css file */
+
+/* Certificate Link Styles */
+.certificates-section {
+    padding: 50px 0;
+  }
+  
+  .certificates-section .certificate-link {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #FFA500;
+    color: #FFA500;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+  }
+  
+  .certificates-section .certificate-link:hover {
+    background-color: #FFA500;
+    color: #fff;
+  }
+  
+  /* Card Styles */
+  .certificates-section .certificate-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .brighten-image {
+    filter: brightness(1.2) contrast(1.2);
+}
+.navbar-nav a.nav-link {
+    text-decoration: none;
+}
+.certificate-link {
+    display: inline-block;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border: 1px solid #000;
+    color: #fff;
+    animation: bounce 1s infinite;
+  }
